@@ -13,7 +13,7 @@ module.exports = {
         static: './dist'
     },
     resolve: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx', '.sass']
+        extensions: ['.js', '.jsx', '.ts', '.tsx', '.ttf']
     },
     module: {
         rules: [
@@ -30,6 +30,24 @@ module.exports = {
                     "@babel/preset-env",
                     "@babel/preset-react"
                 ]
+            },
+            {
+                test: /\.sass$/,
+                exclude: /node_modules/,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'sass-loader'
+                ]
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                type:
+                    'asset/resource'
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)/i,
+                type: 'asset/resource'
             }
         ]
     },

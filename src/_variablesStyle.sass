@@ -1,0 +1,17 @@
+$color-60p: #1e2021
+$color-30p: #6a1c95
+$color-10p: #e7e6e3
+
+@mixin common-button
+    background: $color-30p
+    border: none
+    padding: 15px
+    border-radius: 7px
+    color: $color-10p
+
+    &:hover
+        // color: $color-30p
+        cursor: pointer
+
+    &[selected='true']
+        background-color: $color-30p

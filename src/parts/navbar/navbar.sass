@@ -1,0 +1,42 @@
+@use '../../_variablesStyle'
+    
+@font-face
+    font-family: Modak
+    src: url('../../../static/Modak-Regular.ttf') format('truetype')
+
+#navbar
+    position: sticky
+    z-index: 2
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    border: 2px solid black
+    height: fit-content
+    height: 58px
+    column-gap: 25px
+
+    h1
+        font-family: Modak
+        margin: 3px 3px
+        font-weight: 500
+        color: variablesStyle.$color-30p
+
+    #navbar-buttons
+        height: 100%
+
+        button
+            height: 100%
+            background: none
+            border: none
+            color: variablesStyle.$color-10p
+            cursor: pointer
+
+            &:hover
+                color: variablesStyle.$color-30p
+
+            &[selected='true']
+                background-color: variablesStyle.$color-30p
+            
+
+
