@@ -1,5 +1,5 @@
 import React from 'react'
-import Contact from '../parts/contact/contact'
+import Contact from '../parts/contact/Contact'
 import Footer from '../parts/footer/Footer'
 import Gallery from '../parts/gallery/Gallery'
 import KeyFeatures from '../parts/keyFeatures/KeyFeatures'
